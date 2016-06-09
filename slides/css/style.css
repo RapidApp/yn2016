@@ -56,6 +56,10 @@ body {
   margin-bottom: 0px;
 }
 
+.full .container ul.fa-ul {
+  list-style-type: none;
+}
+
 
 /*
 .full {
