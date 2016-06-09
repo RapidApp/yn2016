@@ -1,0 +1,508 @@
+/*
+	Copyright (c) 2011 Brian Cavalier
+	LICENSE: see the LICENSE.txt file. If file is missing, this file is subject
+	to the MIT License at: http://www.opensource.org/licenses/mit-license.php.
+*/
+
+@import "../basic.css";
+
+/*
+.slide-view-module {
+	margin-top: 3em;
+}
+*/
+
+.slide {
+	font-size: 250%;
+}
+
+.slide h1 {
+	font-size: 4em;
+	font-weight: bold;
+	color: #dadada;
+	margin-bottom: 0;
+	letter-spacing: -.08em;
+	text-rendering: optimizeLegibility;
+}
+
+.slide h2 {
+	margin-top: 0;
+	margin-left: .5em;
+}
+
+.slide h2, 
+.slide h3, 
+.slide h4, 
+.slide h5, 
+.slide h6 {
+  color: #444;
+}
+
+.slide h3 {
+  font-size: 90%;
+}
+
+.slide h4 {
+  font-size: 80%;
+}
+
+.slide h5 {
+  font-size: 70%;
+}
+
+.slide h6 {
+  font-size: 60%;
+}
+
+.slide p {
+	color: #222;
+	margin-left: 2em;
+}
+
+.slide em {
+	font-style: normal;
+	color: #888;
+}
+
+.slide ul > ul {
+	font-size: 90%;
+}
+
+.slide li {
+	line-height: 1em;
+	margin-bottom: .75em;
+}
+
+.slide .slide-layout-title {
+	padding-top: 2em;
+}
+
+@media screen and (max-device-width: 480px) {
+	.slide-view-module {
+		margin-top: 2em;
+	}
+	
+	.slide {
+		font-size: 90%;
+	}
+
+	.slide .slide-layout-title {
+		padding-top: 0;
+	}
+	
+	.slide p {
+		font-size: 1.25em;
+		margin-left: .25em;
+	}
+	
+	.slide h2 {
+		margin-left: .25em;
+	}
+
+	.slide li {
+		font-size: 1.25em;
+	}
+
+}
+
+
+.slide ul > li > ul {
+  list-style-type: none;
+  font-size: 70%;
+  margin-top: .6em;
+  line-height: 70%;
+}
+
+.slide ul > li > ul > li {
+  line-height: .6em;
+}
+
+
+/* Extra customizations */
+
+
+.slide .slide-std {
+  padding-top: 48px;
+}
+
+.slide .slide-tall {
+  padding-top: 15px;
+}
+
+.slide ul > li > ul > li::before { 
+  content:"\00BB\0000a0"; 
+}
+
+.slide a {
+  text-decoration: none;
+}
+
+.slide code {
+  background-color: #f9f2f4;
+  border-radius: 4px;
+  color: #c7254e;
+  font-size: 90%;
+  padding: 2px 4px;
+  white-space: nowrap;
+}
+
+.slide code, pre {
+  font-family: Monaco,Menlo,Consolas,"Courier New",monospace;
+}
+
+.sans { font-family: sans-serif !important; }
+
+.slide .codeview > div.head {
+  font-size:.45em;
+  padding-left: 12px;
+  height:25px;
+}
+
+.slide .codeview div.code-wrap {
+  height: 510px;
+  width: 800px;
+  border: 3px solid transparent;
+}
+
+.slide .codeview > div.code-wrap.highlight {
+  border: 3px solid crimson;
+}
+
+.slide .codeview div.code-wrap > iframe {
+  height: 100%;
+  width: 100%;
+}
+
+.slide .codeview > div.foot {
+  height: 35px;
+  padding-left: 30px;
+  color: crimson;
+  font-size: .5em;
+}
+
+.slide .codeview > div.foot > .arrow { 
+  font-size: 1.4em;
+}
+.slide .codeview > div.foot > .arrow::before { 
+  content:"\21E7"; 
+}
+
+.slide .codeview div.links {
+  font-size: 16px;
+
+}
+
+.slide .codeview div.links * {
+  color: #2f9c0a;
+  font-family: Consolas,Monaco,"Andale Mono",monospace;
+  line-height:2em;
+
+}
+
+.slide .codeview div.links a:hover { color: #036; }
+
+.codelink {
+  font-family: Consolas,Monaco,"Andale Mono",monospace;
+}
+
+
+.slide .codeframe div.links {
+  font-size: 16px;
+}
+
+.slide .codeframe div.links * {
+  color: #2f9c0a;
+  font-family: Consolas,Monaco,"Andale Mono",monospace;
+  line-height:2em;
+
+}
+
+.slide .codeframe .crudmodes div.links a:hover,
+.slide .codeframe .crudmodes div.links a:hover * {
+  color:#4169E1; /* royalblue */
+}
+
+.slide .codeframe .crudmodes  div.links * {
+  font-size: 20px;
+}
+
+.slide .codeframe .crudmodes div.links i {
+  font-weight: bold;
+  font-size:1.2em;
+}
+
+.slide .codeframe .crudmodes div.links .true {
+  color: green;
+}
+
+.slide .codeframe .crudmodes div.links .false {
+  color: crimson;
+}
+
+.slide .codeframe .crudmodes div.links .mixed {
+  color: purple;
+}
+
+
+.slide .codeframe div.links a:hover { color: #036; }
+
+.codelink, .mono {
+  font-family: Consolas,Monaco,"Andale Mono",monospace;
+}
+
+.perl-pkg {
+  font-family: Consolas,Monaco,"Andale Mono",monospace;
+  color: #083772;
+  font-weight:bold;
+}
+
+.intro-slide {
+  height: 550px;
+  width: 800px;
+  background-image: url(../../../img/intro_background.png);
+
+}
+
+
+
+.slide .m-txt {
+  color:orange !important;
+}
+
+.slide .i-txt {
+  color:green !important;
+}
+
+.slide .p-txt {
+  color:blue !important;
+}
+
+.slide .i-txt.em, 
+.slide .m-txt.em,
+.slide .p-txt.em {
+  font-weight:bold;
+  font-size:1.2em;
+}
+
+.slide .right {
+  text-align:right;
+}
+
+.slide .center {
+  text-align:center;
+}
+
+.slide .center > *{
+  margin-left: 0px;
+}
+
+.slide .indented {
+  padding-left: 75px;
+}
+
+.slide .indented.deep {
+  padding-left: 175px;
+}
+
+.slide .lowered {
+  padding-top: 70px;
+}
+
+.slide .lowered.some {
+  padding-top: 25px;
+}
+
+.slide .lowered.lots {
+  padding-top: 130px;
+}
+
+.slide .pinned-down-0 {
+  position:absolute;
+  right:0px;
+  bottom:0px;
+  left:0px;
+}
+
+.slide .pinned-down-25, .slide .pinned-down-40  {
+  position:absolute;
+  right:40px;
+  bottom:25px;
+  left:40px;
+}
+
+.slide .pinned-down-40 {
+  bottom:40px !important;
+}
+
+
+.slide .abs { position:absolute; }
+.slide .abs .rel { position: relative; }
+
+.slide .max { left:0px; right: 0px; top:0px; bottom: 0px; }
+.slide .w0  { left:0px; right: 0px; }
+.slide .h0  { top:0px; bottom: 0px; }
+
+.slide .t20   { top: 20px;   }
+.slide .t50   { top: 50px;   }
+.slide .t80   { top: 80px;   }
+.slide .t100  { top: 100px;   }
+.slide .t120  { top: 120px;   }
+.slide .t150  { top: 150px;  }
+.slide .t150  { top: 160px;  }
+.slide .t250  { top: 250px;  }
+.slide .l200  { left: 200px; }
+.slide .r200  { right: 200px; }
+
+.slide .w40  { left: 40px; right: 40px; width: 751px;  }
+.slide .w200  { left: 200px; right: 200px;  }
+
+.slide .b100  { bottom: 100px; }
+
+.slide .w40 > iframe {
+  width: 1069px;
+}
+
+.slide .w200 > iframe {
+  width: 751px;
+}
+
+.slide .t150 > iframe {
+  height:425px;
+}
+
+
+
+.slide div.outtro-small {
+  color:grey;
+  font-size:0.6em;
+  text-align:right;
+  padding-right:60px;
+}
+
+.slide .hrz-borders {
+  border-top: 1px solid #DDDDDD;
+}
+
+.slide .hrz-borders,
+.slide .btm-border {
+  border-bottom: 1px solid #DDDDDD;
+}
+
+
+.slide .rt-borders {
+  border-top: 1px solid #DDDDDD;
+  border-right: 1px solid #DDDDDD;
+}
+
+.slide .r-border {
+  border-right: 1px solid #DDDDDD;
+}
+
+
+.size-dn {
+  font-size:0.9em !important;
+}
+
+
+/*
+#slide-container {
+  position:absolute;
+  top:0px;
+  right:0px;
+  bottom:0px;
+  left:0px;
+}
+*/
+
+/* alternate, just for dev, draw a box to show 720P res (720x1152) 
+   borders for MacBook running Firefix in full-screen mode  */
+#slide-container {
+  position:relative;
+  border: 1px solid #D0D0D0;
+  border-top-width:0px;
+  border-left-width:0px;
+  height: 640px; /* 80px taken up by FF address bar, tabs, etc */
+  width: 1280px;
+}
+
+div.iframe-address-box {
+  position:relative;
+  font-size: 12px;
+  height: 15px;
+  font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+  color:grey;
+  border: 1px solid #D0D0D0;
+  text-indent:10px;
+  padding:3px 22px 3px 18px;
+  background-position: 8px center;
+  background-repeat:no-repeat;
+  background-image: url(../../../img/lnk.png);
+  background-color: #FAF5E6;
+  font-style:italic;
+  margin: 0px 0px -1px 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Enforce a common text highlight color */
+div.iframe-address-box *::selection      { background:#1E90FF; }
+div.iframe-address-box *::-moz-selection { background:#1E90FF; }
+
+
+div.iframe-address-box .host {
+  opacity:0.5;
+}
+div.iframe-address-box .hash {
+  opacity:0.6;
+  color:maroon;
+}
+
+div.iframe-address-box .reloader {
+  background-position: 10px center;
+  background-repeat:no-repeat;
+  background-image: url(../../../img/rld.png);
+  position: absolute;
+  top: 0; right: 0; bottom: 0;
+  display: inline-block;
+  width:30px;
+  opacity:0.4;
+}
+
+div.iframe-address-box .reloader:hover {
+  cursor:pointer;
+  opacity:1.0;
+}
+
+div.iframe-address-box a.link:hover * {
+  color:#4169E1;
+  opacity:1.0;
+  text-decoration:underline;
+}
+
+
+.hidden-foot {
+  padding:25px;
+}
+
+.hidden-foot * {
+  visibility:hidden;
+}
+
+.hidden-foot:hover * {
+  visibility: visible;
+}
+
+
+.p-t20 { padding-top:20px; }
+
+
+.m-out-50 {
+  margin-left: -50px;
+}
+
+
+.slide a:hover * {
+  color:#4169E1; /* royalblue */
+}
+
