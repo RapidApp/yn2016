@@ -1,0 +1,46 @@
+
+<div class="slide-std">
+  <h2>Example Docker deployment</h2> 
+  
+</div>
+<hr>
+
+
+
+<div class="slide-std">
+  <h2>Example Docker deployment</h2> 
+  
+  <h3 style="padding-left:45px;padding-top:20px;">Apache vhost</h3>
+
+</div>
+<hr>
+
+
+
+<div class="slide-std">
+  <h2>Example Docker deployment</h2> 
+  
+  <h3 style="padding-left:45px;padding-top:20px;">Apache vhost</h3>
+  
+  <div style="padding-top:20px;padding-left:70px;">
+    
+    <div style="float:left;width:800px;padding-right:20px;font-size:20pt">
+      <code style="display:block;padding:10px 20px;">
+        &lt;VirtualHost&nbsp;*:80&gt;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;ServerName&nbsp;my-cool-site.com
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;ServerAdmin&nbsp;webmaster@rapi.io
+        <br>
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;ProxyPass&nbsp;/&nbsp;http://localhost:5000/&nbsp;keepalive=On
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;ProxyPassReverse&nbsp;/&nbsp;http://localhost:5000/
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;RequestHeader&nbsp;set&nbsp;X-Forwarded-HTTPS&nbsp;"0"
+        <br>
+        <br>&lt;/VirtualHost&gt;
+      </code>
+    </div>
+    
+  </div>
+
+</div>
+<hr>
+
