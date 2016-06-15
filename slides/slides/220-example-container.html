@@ -2,9 +2,9 @@
 <div class="slide-std">
   <h3>Example rapi/psgi container setup:</h3>
   
-  <div style="padding-top:30px;padding-left:70px;">
+  <div style="padding-top:20px;padding-left:70px;">
     
-    <div style="float:left;width:660px;padding-right:20px;font-size:20pt">
+    <div style="float:left;width:800px;padding-right:20px;font-size:20pt">
       <code style="display:block;padding:10px 20px;">
         &gt;&nbsp;docker create \<br>
         &nbsp;&nbsp;&nbsp;&nbsp;--name=logview --hostname=logview \<br>
@@ -13,7 +13,7 @@
         &nbsp;&nbsp;&nbsp;&nbsp;-v $(pwd)/Rapi-Demo-LogView:/opt/app \<br>
         &nbsp;&nbsp;rapi/psgi<br>
         &nbsp;&nbsp;&nbsp;&nbsp;<br>
-        &gt;&nbsp;docker start logview <br>
+        &nbsp;&nbsp;docker start logview &amp;&amp; docker logs --follow logview<br>
         &nbsp;&nbsp;&nbsp;&nbsp;<br>
         &gt;&nbsp;docker exec -it logview bash<br>
       </code>
@@ -28,22 +28,24 @@
 <div class="slide-std">
   <h3>Bootstrap via docker:</h3>
   
-  <div style="padding-top:30px;padding-left:70px;">
+  <div style="padding-top:20px;padding-left:70px;">
     
     <div style="float:left;width:800px;padding-right:20px;font-size:20pt">
       <code style="display:block;padding:10px 20px;">
         &gt;&nbsp;mkdir NewApp/<br><br>
-        &gt;&nbsp;docker create \<br>
+        &nbsp;&nbsp;docker create \<br>
         &nbsp;&nbsp;&nbsp;&nbsp;--name=newapp --hostname=newapp \<br>
         &nbsp;&nbsp;&nbsp;&nbsp;--interactive --tty \<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;-p 5000:5000 \<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;-p 5001:5000 \<br>
         &nbsp;&nbsp;&nbsp;&nbsp;-v $(pwd)/NewApp:/opt/app \<br>
         &nbsp;&nbsp;rapi/psgi<br>
         &nbsp;&nbsp;&nbsp;&nbsp;<br>
-        &gt;&nbsp;docker start newapp <br>
+        &nbsp;&nbsp;docker start newapp &amp;&amp; docker logs --follow newapp<br>
         &nbsp;&nbsp;&nbsp;&nbsp;<br>
         &gt;&nbsp;docker exec -it newapp bash<br>
-        #&nbsp;rapidapp.pl --helpers RapidDbic NewApp -- --blank-ddl<br>
+        #&nbsp;rapidapp.pl --helpers RapidDbic NewApp -- --blank-ddl<br><br>
+        #&nbsp;app-restart<br>
+        #&nbsp;stop-app
       </code>
     </div>
     
