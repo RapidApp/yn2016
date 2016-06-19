@@ -18,6 +18,10 @@ body {
 
 }
 
+.full .container * {
+	vertical-align: middle;
+	
+}
 
 .full .container h1 {
     color: #e84a41;
@@ -51,6 +55,16 @@ body {
     font-size: 24px;
 }
 
+.full .container h4 {
+    color: #825e3c;
+    font-family: 'Oswald', serif;
+    font-weight: 100;
+    line-height: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
 .full .container li {
   line-height: 1.42857;
   margin-bottom: 0px;
@@ -60,6 +74,18 @@ body {
   list-style-type: none;
 }
 
+.full .container p {
+     font-family: 'Roboto', serif; 
+    font-size: 15pt;
+    color: #fff2dc;
+    line-height: 25px;
+		margin: 0 0 10px;
+}
+
+.full .container #lightRedText{
+    font-family: 'Oswald', serif; 
+    color: #ff6d65;
+}
 
 /*
 .full {
@@ -76,7 +102,7 @@ body {
   background: url(../images/rapidApp_template.jpg) no-repeat top left fixed;
   position:absolute;  top: 0px; left: 0px; 
   width:1280px;
-  height: 640px;
+  height: 670px;
   -webkit-background-size: 1280px 680px;
   -moz-background-size:    1280px 680px;
   -o-background-size:      1280px 680px;
@@ -85,7 +111,7 @@ body {
 
 #perlLogo{
     position:absolute;
-    bottom:0;
+    bottom:10px;
     left:0;
     margin-left: 0px;
     margin-bottom: 15px;
