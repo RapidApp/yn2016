@@ -103,10 +103,10 @@ body {
   position:absolute;  top: 0px; left: 0px; 
   width:1280px;
   height: 670px;
-  -webkit-background-size: 1280px 680px;
-  -moz-background-size:    1280px 680px;
-  -o-background-size:      1280px 680px;
-  background-size:         1280px 680px;
+  -webkit-background-size: 1280px 650px;
+  -moz-background-size:    1280px 650px;
+  -o-background-size:      1280px 650px;
+  background-size:         1280px 650px;
 }
 
 #perlLogo{

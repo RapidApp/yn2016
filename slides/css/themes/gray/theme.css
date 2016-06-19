@@ -421,7 +421,7 @@
   border: 1px solid #D0D0D0;
   border-top-width:0px;
   border-left-width:0px;
-  height: 640px; /* 80px taken up by FF address bar, tabs, etc */
+  height: 648px; /* 80px taken up by FF address bar, tabs, etc */
   width: 1280px;
 }
 
